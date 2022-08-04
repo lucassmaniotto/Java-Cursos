@@ -1,5 +1,6 @@
+package Objects;
 public class Conta {
-        double saldo;
+        private double saldo;
         int agencia;
         int numero;
         Cliente titular;
@@ -27,5 +28,9 @@ public class Conta {
             }
             System.out.println("Saldo insuficiente");
             return false;
+        }
+
+        public double informaSaldo(){
+            return this.saldo;
         }
 }
