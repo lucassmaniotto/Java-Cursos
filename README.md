@@ -4,4 +4,4 @@
 * Introdução a Linguagem;
 * Composição de objetos;
 * Encapsulamento e visibilidade + Reaproveitamento entre contrutores;
-* Polimorfismo
+* Polimorfismo;

@@ -14,5 +14,7 @@ public class TestaGerente {
         
         boolean autenticou = gerente.autenticaSenha(1222);
         System.out.println(autenticou);
+
+        System.out.println(gerente.getBonus());
     }
 }
