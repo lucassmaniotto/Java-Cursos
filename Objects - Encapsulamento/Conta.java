@@ -5,12 +5,22 @@ public class Conta {
         private Cliente titular;
         private static int total;
 
-        //construtor
+        //construtores
         public Conta(int agencia, int numero){
             Conta.total++;
             this.agencia = agencia;
             this.numero = numero;
         }
+
+        /* 
+        No Java podemos chamar a implementação de um construtor através de outro
+        usando simplesmente this( ) com os parâmetros exigidos pelo construtor.
+        */
+
+        public Conta(int numero){
+            this(1335, numero); // por padrão a Agência fica como 1335 quando desejamos criar uma conta somente com o número
+        }
+
 
         //métodos do saldo
         public double getSaldo(){
