@@ -1,9 +1,9 @@
 public class TestaGetESet{
 
     public static void main(String[] args) {
-        Conta conta = new Conta();
-        conta.setNumero(1337);
-        conta.setAgencia(99);
+        Conta conta = new Conta(1337, 99);
+        //conta.setNumero(1337);
+        //conta.setAgencia(99);
         System.out.println((conta.getNumero()) + "\n" + (conta.getAgencia()));
 
         Cliente lucas = new Cliente();
