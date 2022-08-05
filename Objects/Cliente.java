@@ -1,4 +1,3 @@
-package Objects;
 public class Cliente {
 
     String nome;
