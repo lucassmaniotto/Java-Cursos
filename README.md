@@ -2,8 +2,9 @@
 
 ## Ordem das aulas por commits:
 * Introdução a Linguagem;
-* Composição de objetos;
-* Encapsulamento e visibilidade 
+* Objetos;
+    + Composição de objetos;
+    + Encapsulamento e visibilidade;
     + Reaproveitamento entre contrutores;
 * Polimorfismo;
     + Introdução a Herança;
