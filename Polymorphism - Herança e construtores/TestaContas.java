@@ -1,10 +1,10 @@
 public class TestaContas {
     
     public static void main(String[] args) {
-        ContaCorrente contaCorrente = new ContaCorrente(111, 111);
+        Conta contaCorrente = new ContaCorrente(111, 111);
         contaCorrente.deposita(100);
 
-        ContaPoupanca contaPoupanca = new ContaPoupanca(222, 222);
+        Conta contaPoupanca = new ContaPoupanca(222, 222);
         contaPoupanca.deposita(200);
 
         System.out.println("Corrente: " + contaCorrente.getSaldo() + "\n" + "Poupança: " + contaPoupanca.getSaldo());
