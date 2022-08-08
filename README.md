@@ -9,4 +9,4 @@
     + Introdução a Herança;
     + Super e reescrita de métodos;
     + Introdução a Polimorfismo;
-    + Herança e uso de construtores;
+    + Herança e uso de Construtores;
