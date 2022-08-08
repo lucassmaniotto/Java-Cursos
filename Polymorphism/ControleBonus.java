@@ -4,7 +4,7 @@ public class ControleBonus {
     
     public void registra(Funcionario f) {
         double bonus = f.getBonus();
-        this.soma = this.soma + bonus;
+        this.soma += bonus;
     }
 
     public double getSoma() {
