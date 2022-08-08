@@ -13,11 +13,16 @@ public class TestaReferencias {
         Funcionario editor = new EditorDeVideo();
         editor.setNome("Felipe");
         editor.setSalario(2500.0);
+
+        Funcionario designer = new Designer();
+        designer.setNome("Paulo");
+        designer.setSalario(2100);
         
         ControleBonus controle = new ControleBonus();
         controle.registra(g1);
         controle.registra(f1);
         controle.registra(editor);
+        controle.registra(designer);
 
         System.out.println(controle.getSoma());
     }
