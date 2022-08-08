@@ -9,10 +9,15 @@ public class TestaReferencias {
         Funcionario f1 = new Funcionario();
         f1.setNome("Licas");
         f1.setSalario(2000.0);
+
+        Funcionario editor = new EditorDeVideo();
+        editor.setNome("Felipe");
+        editor.setSalario(2500.0);
         
         ControleBonus controle = new ControleBonus();
         controle.registra(g1);
         controle.registra(f1);
+        controle.registra(editor);
 
         System.out.println(controle.getSoma());
     }
