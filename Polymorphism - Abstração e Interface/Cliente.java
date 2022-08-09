@@ -1,11 +1,6 @@
-public class Administrador extends Funcionario implements Autenticavel{
+public class Cliente implements Autenticavel{
 
     private int senha;
-
-    @Override
-    public double getBonus() {
-        return (getSalario()/2);
-    }
 
     @Override
     public boolean autenticaSenha(int senha) {
