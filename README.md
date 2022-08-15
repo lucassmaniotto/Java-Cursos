@@ -16,3 +16,6 @@
     + Composição em Java;
     + Prática de Herança e Interface;
 * Enums;
+* Exceções;
+    + Pilha e Tratamento de Exceções;
+    + Exceções Checked e Unchecked;
