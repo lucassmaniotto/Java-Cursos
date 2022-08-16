@@ -20,3 +20,5 @@
     + Pilha e Tratamento de Exceções;
     + Exceções Checked e Unchecked;
     + Finally e Try with Resources;
+* Packages;
+    + Organizando Classes com Pacotes;
