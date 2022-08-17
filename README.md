@@ -23,3 +23,5 @@
 * Packages;
     + Organizando Classes com Pacotes;
     + Distribuição de código;
+* java.lang;
+    + Usando a classe Object e String
