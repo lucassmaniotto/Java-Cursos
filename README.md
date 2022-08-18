@@ -24,8 +24,9 @@
     + Organizando Classes com Pacotes;
     + Distribuição de código;
 * java.lang;
-    + Usando a classe Object e String
+    + Usando a classe Object e String;
 * java.util;
-    + Array List e Generics
-    + Método equals() e Listas
-    + Classes Wrapper
+    + Array List e Generics;
+    + Método equals() e Listas;
+    + Classes Wrapper;
+    + Ordenação de Listas;
