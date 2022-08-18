@@ -2,6 +2,7 @@ package br.com.bytebank.banco.teste.util;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import br.com.bytebank.banco.modelo.Cliente;
@@ -85,4 +86,36 @@ public class TestaOrdenacaoNatural {
 
     } 
 
+}
+
+class AgenciaDaContaComparator implements Comparator<Conta>{
+
+    @Override
+    public int compare(Conta c1, Conta c2) {
+        return Integer.compare(c1.getAgencia(), c2.getAgencia());
+    }
+    
+}
+
+class NumeroDaContaComparator implements Comparator<Conta>{
+
+    @Override
+    public int compare(Conta c1, Conta c2) {
+        return Integer.compare(c1.getNumero(), c2.getNumero());
+    }
+    
+}
+
+class TitularDaContaComparator implements Comparator<Conta>{
+
+    @Override
+    public int compare(Conta c1, Conta c2) {
+
+        String nomeC1 = c1.getTitular().getNome();
+        String nomeC2 = c2.getTitular().getNome();
+        
+        return nomeC1.compareTo(nomeC2);
+        
+    }
+    
 }
