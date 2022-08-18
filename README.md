@@ -30,3 +30,4 @@
     + Método equals() e Listas;
     + Classes Wrapper;
     + Ordenação de Listas;
+    + Lambdas;
