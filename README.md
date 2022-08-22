@@ -32,3 +32,5 @@
         + Classes Wrapper;
         + Ordenação de Listas;
         + Lambdas;
+* java.io;
+    + Streams, Reader e Writers
