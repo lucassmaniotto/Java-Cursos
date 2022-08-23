@@ -34,3 +34,5 @@
         + Lambdas;
     * java.io;
         + Streams, Reader e Writers;
+    * org.junit;
+        + Testes Automatizados;
