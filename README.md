@@ -36,3 +36,6 @@
         + Streams, Reader e Writers;
     * org.junit;
         + Testes Automatizados;
+* Testes Automatizados:
+    * Selenium - Testes de aceitação
+        + Selenium WebDriver;
