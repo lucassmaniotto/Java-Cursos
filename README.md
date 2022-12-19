@@ -36,6 +36,8 @@
         + Streams, Reader e Writers;
     * org.junit;
         + Testes Automatizados;
+* Java 8;
+    + Default Methods;
 * Testes Automatizados:
     * Selenium - Testes de aceitação
         + Selenium WebDriver;
