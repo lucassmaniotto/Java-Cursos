@@ -42,6 +42,7 @@
     + Interface Funcional e Lambdas;
     + Method References;
     + Streams;
+    + LocalDate e LocalDateTime;
 * Testes Automatizados:
     * Selenium - Testes de aceitação
         + Selenium WebDriver;
