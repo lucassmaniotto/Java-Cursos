@@ -37,6 +37,8 @@
         + Streams, Reader e Writers;
     * org.junit;
         + Testes Automatizados;
+* Java Collections;
+    + ArrayList;
 * Java 8;
     + Default Methods;
     + Interface Funcional e Lambdas;
