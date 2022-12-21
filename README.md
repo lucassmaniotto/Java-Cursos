@@ -40,7 +40,7 @@
 * Java 8;
     + Default Methods;
     + Interface Funcional e Lambdas;
-    + Method References;
+    + Method References; 
 * Testes Automatizados:
     * Selenium - Testes de aceitação
         + Selenium WebDriver;
