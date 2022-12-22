@@ -39,6 +39,7 @@
         + Testes Automatizados;
 * Java Collections;
     + ArrayList;
+    + ArrayList e Objetos;
 * Java 8;
     + Default Methods;
     + Interface Funcional e Lambdas;
