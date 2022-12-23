@@ -1,5 +1,7 @@
 package br.com.alura;
 
+import java.util.List;
+
 //import java.util.List;
 
 import br.com.alura.Objects.Course;
@@ -8,6 +10,10 @@ import br.com.alura.Objects.Lesson;
 public class CollectionRelationships {
     public static void main(String[] args) {
         Course javaCollections = new Course("Dominando as coleções do Java", "Paulo Silveira");
+
+        List<Lesson> lessons = javaCollections.getLessons();
+
+        System.out.println(lessons);
         
         /* 
         javaCollections
@@ -24,5 +30,7 @@ public class CollectionRelationships {
             .forEach(l -> System.out.printf("Aula %d: %s - %s minutos%n", 
                 javaCollections.getLessons().indexOf(l) + 1, l.getName(), l.getTime()
             ));
+        
+        System.out.println(lessons);
     }
 }
