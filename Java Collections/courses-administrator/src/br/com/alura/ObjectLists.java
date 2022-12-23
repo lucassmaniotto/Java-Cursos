@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+import br.com.alura.Objects.Lesson;
+
 public class ObjectLists {
     public static void main(String[] args) {
         Lesson lesson1 = new Lesson("Revisitando as ArrayLists", 21);

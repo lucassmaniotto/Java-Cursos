@@ -1,4 +1,4 @@
-package br.com.alura;
+package br.com.alura.Objects;
 
 public class Lesson implements Comparable<Lesson> {
     private String name;
@@ -24,7 +24,7 @@ public class Lesson implements Comparable<Lesson> {
 
     @Override
     public String toString() {
-        return "Lesson: " + this.name + " -  Time: " + this.time;
+        return "Lesson: " + this.name + " - Time: " + this.time;
     }
 
 }
