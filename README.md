@@ -1,6 +1,5 @@
-# Formação Java e Orientação a Objetos
-
-## Ordem das aulas por commits:
+# Alura
+## Formações
 ### Formação Java e Orientação a Objetos: https://cursos.alura.com.br/formacao-java
 * Introdução a Linguagem;
 * Objetos;
@@ -50,3 +49,11 @@
 * Testes Automatizados:
     * Selenium - Testes de aceitação
         + Selenium WebDriver;
+
+### Formação Boas Práticas em Java: https://cursos.alura.com.br/formacao-boas-praticas-java
+* Java e refatoração: melhorando códigos com boas práticas
+  * Refatoração e análise de código
+  * SOLID
+  * Domínios
+  * Testes automatizados
+  * Design Patterns
