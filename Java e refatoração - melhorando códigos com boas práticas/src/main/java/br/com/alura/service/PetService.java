@@ -1,5 +1,9 @@
 package br.com.alura.service;
 
+import br.com.alura.client.ClientHttpConfiguration;
+import br.com.alura.domain.Pet;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -8,25 +12,20 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import br.com.alura.client.ClientHttpContiguration;
-import br.com.alura.domain.Pet;
-
 @SuppressWarnings("resource")
 public class PetService {
-    private ClientHttpContiguration client;
 
-    public PetService(ClientHttpContiguration client) {
+    private ClientHttpConfiguration client;
+
+    public PetService(ClientHttpConfiguration client) {
         this.client = client;
     }
 
-    public void listarPets() throws IOException, InterruptedException {
+    public void listarPetsDoAbrigo() throws IOException, InterruptedException {
         System.out.println("Digite o id ou nome do abrigo:");
         String idOuNome = new Scanner(System.in).nextLine();
 
         String uri = "http://localhost:8080/abrigos/" +idOuNome +"/pets";
-    
         HttpResponse<String> response = client.dispararRequisicaoGet(uri);
         int statusCode = response.statusCode();
         if (statusCode == 404 || statusCode == 500) {
@@ -46,7 +45,7 @@ public class PetService {
         }
     }
 
-    public void importarPets() throws IOException, InterruptedException {
+    public void importarPetsDoAbrigo() throws IOException, InterruptedException {
         System.out.println("Digite o id ou nome do abrigo:");
         String idOuNome = new Scanner(System.in).nextLine();
 
