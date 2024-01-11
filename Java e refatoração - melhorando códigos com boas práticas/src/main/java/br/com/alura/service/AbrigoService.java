@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import br.com.alura.client.ClientHttpContiguration;
 import br.com.alura.domain.Abrigo;
 
-
+@SuppressWarnings("resource")
 public class AbrigoService {
     private ClientHttpContiguration client;
     

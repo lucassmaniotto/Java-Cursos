@@ -5,7 +5,7 @@ import br.com.alura.service.AbrigoService;
 import br.com.alura.service.PetService;
 
 import java.util.Scanner;
-
+@SuppressWarnings("resource")
 public class AdopetConsoleApplication {
 
     public static void main(String[] args) {
