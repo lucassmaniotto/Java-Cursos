@@ -14,6 +14,7 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+@SuppressWarnings("unchecked")
 public class AbrigoServiceTest {
 
     private ClientHttpConfiguration client = mock(ClientHttpConfiguration.class);
