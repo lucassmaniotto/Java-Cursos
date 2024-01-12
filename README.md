@@ -50,6 +50,12 @@
     * Selenium - Testes de aceitação
         + Selenium WebDriver;
 
+### Formação Java e Spring Boot: https://cursos.alura.com.br/formacao-spring-boot-3
+* Spring Boot 3: desenvolva uma API Rest em Java
+  * Criação de projeto e API
+  * Requisições e Responses
+  * Spring Data JPA
+
 ### Formação Boas Práticas em Java: https://cursos.alura.com.br/formacao-boas-praticas-java
 * Java e refatoração: melhorando códigos com boas práticas
   * Refatoração e análise de código
@@ -57,3 +63,8 @@
   * Domínios
   * Testes automatizados
   * Design Patterns
+* Boas práticas de programação: melhore o código de uma API Java
+  * Separação de responsabilidades
+  * Padrão Data Transfer Object
+  * Validações flexíveis
+  * Otimizações na camada de persistência
