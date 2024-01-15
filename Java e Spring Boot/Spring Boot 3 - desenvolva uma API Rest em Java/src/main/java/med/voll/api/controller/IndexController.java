@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/hello")
-public class HelloWorldController {
+@RequestMapping("/index")
+public class IndexController {
     @GetMapping
-    public String helloWorld() {
-        return "Hello World!";
+    public String index() {
+        return "Server is running on port 8081";
     }
 }
