@@ -55,6 +55,12 @@
   * Criação de projeto e API
   * Requisições e Responses
   * Spring Data JPA
+* Spring Boot 3: aplique boas práticas e proteja uma API Rest
+  * Boas práticas e segurança
+  * Lidando com erros
+  * Spring Security
+  * JSON Web Token
+  * Controle de acesso
 
 ### Formação Boas Práticas em Java: https://cursos.alura.com.br/formacao-boas-praticas-java
 * Java e refatoração: melhorando códigos com boas práticas
