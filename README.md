@@ -61,6 +61,12 @@
   * Spring Security
   * JSON Web Token
   * Controle de acesso
+* Spring Boot 3: documente, teste e prepare uma API para o deploy
+  * Isolar dependências
+  * SOLID   
+  * Documentação com OpenAPI
+  * Testes automatizados
+  * Build e deploy
 
 ### Formação Boas Práticas em Java: https://cursos.alura.com.br/formacao-boas-praticas-java
 * Java e refatoração: melhorando códigos com boas práticas
