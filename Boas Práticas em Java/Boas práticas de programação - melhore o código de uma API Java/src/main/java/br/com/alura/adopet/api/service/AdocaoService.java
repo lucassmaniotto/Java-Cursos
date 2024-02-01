@@ -23,7 +23,7 @@ import br.com.alura.adopet.api.repository.TutorRepository;
 public class AdocaoService {
 
     @Autowired
-    private AdocaoRepository repository;
+    private AdocaoRepository adocaoRepository;
 
     @Autowired
     private PetRepository petRepository;
@@ -38,37 +38,14 @@ public class AdocaoService {
         Pet pet = petRepository.getReferenceById(dto.petId());
         Tutor tutor = tutorRepository.getReferenceById(dto.tutorId());
 
-        if (pet.getAdotado() == true) {
-            throw new ValidacaoException("Pet já foi adotado!");
-        } else {
-            List<Adocao> adocoes = repository.findAll();
-            for (Adocao a : adocoes) {
-                if (a.getTutor() == tutor && a.getStatus() == StatusAdocao.AGUARDANDO_AVALIACAO) {
-                    throw new ValidacaoException("Tutor já possui outra adoção aguardando avaliação!");
-                }
-            }
-            for (Adocao a : adocoes) {
-                if (a.getPet() == pet && a.getStatus() == StatusAdocao.AGUARDANDO_AVALIACAO) {
-                    throw new ValidacaoException("Pet já está aguardando avaliação para ser adotado!");
-                }
-            }
-            for (Adocao a : adocoes) {
-                int contador = 0;
-                if (a.getTutor() == tutor && a.getStatus() == StatusAdocao.APROVADO) {
-                    contador = contador + 1;
-                }
-                if (contador == 5) {
-                    throw new ValidacaoException("Tutor chegou ao limite máximo de 5 adoções!");
-                }
-            }
-        }
+        //validações
 
         Adocao adocao = new Adocao();
         adocao.setData(LocalDateTime.now());
         adocao.setStatus(StatusAdocao.AGUARDANDO_AVALIACAO);
         adocao.setPet(pet);
         adocao.setTutor(tutor);
-        repository.save(adocao);
+        adocaoRepository.save(adocao);
 
         emailService.enviarEmail(
             pet.getAbrigo().getEmail(),
@@ -78,7 +55,7 @@ public class AdocaoService {
     }
 
     public void aprovar(AprovacaoAdocaoDto dto) {
-        Adocao adocao = repository.getReferenceById(dto.adocaoId());
+        Adocao adocao = adocaoRepository.getReferenceById(dto.adocaoId());
         adocao.setStatus(StatusAdocao.APROVADO);
 
         emailService.enviarEmail(
@@ -89,7 +66,7 @@ public class AdocaoService {
     }
 
     public void reprovar(ReprovacaoAdocaoDto dto) {
-        Adocao adocao = repository.getReferenceById(dto.adocaoId());
+        Adocao adocao = adocaoRepository.getReferenceById(dto.adocaoId());
         adocao.setStatus(StatusAdocao.REPROVADO);
         adocao.setJustificativaStatus(dto.justificativa());
 
