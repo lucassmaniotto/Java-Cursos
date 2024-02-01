@@ -14,7 +14,7 @@ import br.com.alura.adopet.api.repository.AdocaoRepository;
 import br.com.alura.adopet.api.repository.PetRepository;
 
 @Component
-public class ValidacaoPetComAdocaoEmAndamento {
+public class ValidacaoPetComAdocaoEmAndamento implements ValidacaoSolicitacaoAdocao {
     @Autowired
     private AdocaoRepository adocaoRepository;
 

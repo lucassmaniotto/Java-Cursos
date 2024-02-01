@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 import br.com.alura.adopet.api.dto.AprovacaoAdocaoDto;
 import br.com.alura.adopet.api.dto.ReprovacaoAdocaoDto;
 import br.com.alura.adopet.api.dto.SolicitacaoAdocaoDto;
-import br.com.alura.adopet.api.exception.ValidacaoException;
 import br.com.alura.adopet.api.model.Adocao;
 import br.com.alura.adopet.api.model.Pet;
 import br.com.alura.adopet.api.model.StatusAdocao;
@@ -18,6 +17,7 @@ import br.com.alura.adopet.api.model.Tutor;
 import br.com.alura.adopet.api.repository.AdocaoRepository;
 import br.com.alura.adopet.api.repository.PetRepository;
 import br.com.alura.adopet.api.repository.TutorRepository;
+import br.com.alura.adopet.api.validation.ValidacaoSolicitacaoAdocao;
 
 @Service
 public class AdocaoService {
@@ -34,11 +34,14 @@ public class AdocaoService {
     @Autowired
     private EmailService emailService;
 
+    @Autowired
+    private List<ValidacaoSolicitacaoAdocao> validacoes;
+
     public void solicitar(SolicitacaoAdocaoDto dto) {
         Pet pet = petRepository.getReferenceById(dto.petId());
         Tutor tutor = tutorRepository.getReferenceById(dto.tutorId());
 
-        //validações
+        validacoes.forEach(v -> v.validar(dto));
 
         Adocao adocao = new Adocao();
         adocao.setData(LocalDateTime.now());
