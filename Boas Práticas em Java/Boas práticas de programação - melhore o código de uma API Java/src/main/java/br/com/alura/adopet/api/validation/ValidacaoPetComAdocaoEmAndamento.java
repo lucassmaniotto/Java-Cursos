@@ -17,7 +17,7 @@ public class ValidacaoPetComAdocaoEmAndamento implements ValidacaoSolicitacaoAdo
     public void validar(SolicitacaoAdocaoDto dto) {
 
         boolean petTemAdocaoEmAndamento = adocaoRepository
-                    .existsByPetIdAndStatus(dto.petId(), StatusAdocao.AGUARDANDO_AVALIACAO);
+                    .existsByPetIdAndStatus(dto.idPet(), StatusAdocao.AGUARDANDO_AVALIACAO);
                     
         if (petTemAdocaoEmAndamento) {
                 throw new ValidacaoException("Pet já está aguardando avaliação para ser adotado!");
