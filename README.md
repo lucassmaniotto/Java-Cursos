@@ -80,3 +80,7 @@
   * Padrão Data Transfer Object
   * Validações flexíveis
   * Otimizações na camada de persistência
+* Boas práticas de programação: automatizando teste com Java
+  * Testes de unidade com JUnit
+  * Boas práticas de testes
+  * Testes com Mockito
