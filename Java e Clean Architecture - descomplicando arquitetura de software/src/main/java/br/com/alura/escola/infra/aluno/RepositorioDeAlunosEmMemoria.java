@@ -3,10 +3,10 @@ package br.com.alura.escola.infra.aluno;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.alura.escola.dominio.aluno.Aluno;
-import br.com.alura.escola.dominio.aluno.AlunoNaoEncontrado;
-import br.com.alura.escola.dominio.aluno.CPF;
-import br.com.alura.escola.dominio.aluno.RepositorioDeAlunos;
+import br.com.alura.escola.domain.aluno.Aluno;
+import br.com.alura.escola.domain.aluno.AlunoNaoEncontrado;
+import br.com.alura.escola.domain.aluno.CPF;
+import br.com.alura.escola.domain.aluno.RepositorioDeAlunos;
 
 public class RepositorioDeAlunosEmMemoria implements RepositorioDeAlunos {
 

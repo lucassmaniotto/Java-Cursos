@@ -1,4 +1,4 @@
-package br.com.alura.escola.dominio.aluno;
+package br.com.alura.escola.domain.aluno;
 
 public interface CifradorDeSenha {
 

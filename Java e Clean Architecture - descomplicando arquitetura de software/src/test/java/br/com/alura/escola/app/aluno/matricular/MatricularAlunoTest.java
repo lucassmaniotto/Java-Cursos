@@ -1,11 +1,11 @@
-package br.com.alura.escola.aplicacao.aluno.matricular;
+package br.com.alura.escola.app.aluno.matricular;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import br.com.alura.escola.dominio.aluno.Aluno;
-import br.com.alura.escola.dominio.aluno.CPF;
+import br.com.alura.escola.domain.aluno.Aluno;
+import br.com.alura.escola.domain.aluno.CPF;
 import br.com.alura.escola.infra.aluno.RepositorioDeAlunosEmMemoria;
 
 class MatricularAlunoTest {

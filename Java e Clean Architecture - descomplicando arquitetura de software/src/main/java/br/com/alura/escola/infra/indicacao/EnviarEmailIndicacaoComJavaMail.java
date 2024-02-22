@@ -1,7 +1,7 @@
 package br.com.alura.escola.infra.indicacao;
 
-import br.com.alura.escola.aplicacao.indicacao.EnviarEmailIndicacao;
-import br.com.alura.escola.dominio.aluno.Aluno;
+import br.com.alura.escola.app.indicacao.EnviarEmailIndicacao;
+import br.com.alura.escola.domain.aluno.Aluno;
 
 public class EnviarEmailIndicacaoComJavaMail implements EnviarEmailIndicacao {
 
